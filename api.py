@@ -43,6 +43,38 @@ cred = credentials.Certificate("C:/goutam/soham/service-account.json")
 firebase_admin.initialize_app(cred)
 print(cred)
 
+# BELOW IS THE CODE TO PULL FROM THE GRAPHQL STUYACTIVITIES DATABASE, CURRENTLY IN PROGRESS
+# from gql import gql, Client
+# from gql.transport.aiohttp import AIOHTTPTransport
+# def _pull_graphql():
+#     transport = AIOHTTPTransport(url="http://api.stuyactivities.org/graphql")
+#     client = Client(transport=transport, fetch_schema_from_transport = True)
+    
+#     query = gql(
+#         """
+#         mutation{
+#             login(
+#                 googleToken: "" 
+#             ) 
+#         }
+    
+#         query {
+#     	userByEmail(email: "smukherjee40@stuy.edu"){
+#         memberships {
+#           organization{
+#             name
+#             url
+#           }
+#         }
+#       }
+#     }
+#         """
+#     )
+    
+#     result = client.execute(query)
+#     print(result)
+    
+
 #Returns access token to authorize Firebase push notification
 def _get_access_token():
     SCOPES = []
