@@ -19,4 +19,5 @@ samples, guidance on mobile development, and a full API reference.
 A notifier app, currently in development to support the existing "StuyActivities" website and benefit Stuyvesant student community.
 This project is called "test" locally.
 The frontend, built using Flutter, is ready and in the process of being integrated with Python API backend (including Firebase remote push notifications).
+
 **Currently integrating GraphQL StuyActivities database with Python backend to support the frontend.
